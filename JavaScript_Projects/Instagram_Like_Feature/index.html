@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaGram</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<style>
+    html,
+    body {
+        width: 100%;
+        height: 100svh;
+        overflow: hidden;
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: cornflowerblue;
+    }
+
+    .container {
+        width: 350px;
+        height: 450px;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .container i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0;
+        transition: transform ease 0.4s;
+        font-size: 90px;
+        color: #fff;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <img src="./ironman.jpg" alt="ironman">
+        <i class="ri-heart-fill"></i>
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
